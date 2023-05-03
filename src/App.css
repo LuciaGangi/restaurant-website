@@ -15,7 +15,7 @@ html{
 }
 
 body{
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Graviola', sans-serif;
 }
 
 .container{
@@ -27,5 +27,9 @@ body{
 
 section{
   padding: 50px 0;
+}
+
+.header {
+  width: 100%;
 }
 

@@ -39,8 +39,8 @@ const NavBar = () => {
   };
 
   return (
-    <header className="header sticky top-18 left-0 text-xl bg-headingColor shadow-md flex items-center justify-between overflow-visible px-2 py-0 z-0">
-      <nav className="flex justify-between items-center container">
+    <header className="header sticky top-18 left-0 text-xl bg-headingColor shadow-md flex items-center justify-between overflow-visible px-2 py-0 z-10">
+      <nav className="flex justify-between items-center container z-4" >
         <ul className="flex items-center">
           <li
             className="p-4 text-white hover:text-primaryColor duration-200 cursor-pointer active"

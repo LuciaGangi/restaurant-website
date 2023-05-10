@@ -3,6 +3,12 @@
   src: url('./assets/fonts/graviola-regular.ttf');
 }
 
+@font-face {
+  font-family: Quicksand;
+  src: url('./assets/fonts/Quicksand-VariableFont_wght.ttf');
+}
+
+
 
 * {
   padding: 0;
@@ -15,7 +21,7 @@ html{
 }
 
 body{
-  font-family: 'Graviola', sans-serif;
+  font-family: 'Graviola', 'Quicksand', sans-serif;
 }
 
 .container{
@@ -33,3 +39,6 @@ section{
   width: 100%;
 }
 
+.font-custom {
+  font-weight: bolder;
+}

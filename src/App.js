@@ -6,7 +6,7 @@ import './App.css';
 
 import NavBarSocial from './components/NavBarSocial';
 import NavBar from './components/NavBar';
-import Banner from './components/Banner';
+import Carousel from './components/Carousel';
 
 function App() {
   useEffect(() => {
@@ -14,16 +14,13 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
-    <header>
-      <NavBarSocial />
-      <NavBar />
+    <div className="bg-headingColor">
+      <header>
+        <NavBarSocial />
+        <NavBar />
       </header>
-    
-      <Banner/>
-
+      <Carousel/>
       <footer className="bg-gray-800 text-white py-4 px-8">Mi pie de página</footer>
-    
     </div>
   );
 }

@@ -8,6 +8,7 @@ import NavBar from './components/NavBar';
 import Carousel from './components/Carousel';
 import Welcome from './components/Welcome';
 import TodayDishes from './components/TodayDishes';
+import SpecialMenu from './components/SpecialMenu';
 
 function App() {
   useEffect(() => {
@@ -23,6 +24,7 @@ function App() {
       <Carousel/>
       <Welcome />
       <TodayDishes />
+      <SpecialMenu />
       <footer className="bg-gray-800 text-white py-4 px-8">Mi pie de página</footer>
     </div>
   );

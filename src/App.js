@@ -9,6 +9,7 @@ import Carousel from './components/Carousel';
 import Welcome from './components/Welcome';
 import TodayDishes from './components/TodayDishes';
 import SpecialMenu from './components/SpecialMenu';
+import Chef from './components/Chef';
 
 function App() {
   useEffect(() => {
@@ -25,6 +26,7 @@ function App() {
       <Welcome />
       <TodayDishes />
       <SpecialMenu />
+      <Chef />
       <footer className="bg-gray-800 text-white py-4 px-8">Mi pie de página</footer>
     </div>
   );

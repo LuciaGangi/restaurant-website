@@ -64,7 +64,7 @@ const SpecialMenu = () => {
       : menuItems.filter((item) => item.categories === filter);
 
   return (
-    <div className="bg-white min-h-screen">
+    <div className="bg-[#f4f2ed] min-h-screen">
       <div className="container mx-auto px-4">
         <h2 className="text-5xl font-extrabold font-[Quicksand] text-center p-12 mt-4 mb-2">
           Our Special Menu

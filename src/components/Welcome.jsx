@@ -21,7 +21,7 @@ const Welcome = () => {
         </p> <br />
           <h2 className="font-[Jey] text-7xl">Ali tufan</h2>
           <span>Ali Tufan / CEO</span>
-          <button className="bg-gray-800 hover:bg-gray-900 text-xs text-white font-bold py-3 px-4 rounded-3xl mt-6 inline-block" style={{ width: '130px' }}>
+          <button className="bg-gray-800 hover:bg-primaryColor text-xs text-white hover:text-black font-bold py-3 px-4 rounded-3xl mt-6 inline-block" style={{ width: '130px' }}>
             LEARN MORE
           </button>
 

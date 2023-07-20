@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 const NavBar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -39,17 +39,17 @@ const NavBar = () => {
   };
 
   return (
-    <header className="header sticky top-18 left-0 text-xl bg-headingColor shadow-md flex items-center justify-between overflow-visible px-2 py-0 z-0">
-      <nav className="flex justify-between items-center container">
-        <ul className="flex items-center">
-          <li
-            className="p-4 text-white hover:text-primaryColor duration-200 cursor-pointer active"
+    <header className="header sticky top-18 left-0 text-xl bg-headingColor shadow-md flex flex-col sm:flex-row items-center justify-between overflow-visible px-2 py-0 z-10">
+      <nav className="flex justify-between items-center container z-4">
+        <div className="flex items-center">
+          <div
+            className="p-4 text-white hover:text-primaryColor duration-200 cursor-pointer"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
             <a href="2">Home</a>
             {showMenu && (
-              <div className="absolute bg-white rounded-md py-2 px-4">
+              <div className="absolute bg-white rounded-md py-2 px-4 mt-6">
                 <a href="2" className="block text-headingColor hover:text-primaryColor mb-2">
                   Home main
                 </a>
@@ -67,13 +67,15 @@ const NavBar = () => {
                 </a>
               </div>
             )}
-          </li>
-          <li className="p-4 text-white hover:text-primaryColor duration-200 cursor-pointer"
+          </div>
+          <div
+            className="p-4 text-white hover:text-primaryColor duration-200 cursor-pointer"
             onMouseEnter={handleMouseEnter2}
-            onMouseLeave={handleMouseLeave2}>
+            onMouseLeave={handleMouseLeave2}
+          >
             <a href="3">Pages</a>
             {showMenu2 && (
-              <div className="absolute bg-white rounded-md py-2 px-4">
+              <div className="absolute bg-white rounded-md py-2 px-4 mt-6">
                 <a href="2" className="block text-headingColor hover:text-primaryColor mb-2">
                   About us
                 </a>
@@ -109,13 +111,15 @@ const NavBar = () => {
                 </a>
               </div>
             )}
-          </li>
-          <li className="p-4 text-white hover:text-primaryColor duration-200 cursor-pointer"
+          </div>
+          <div
+            className="p-4 text-white hover:text-primaryColor duration-200 cursor-pointer"
             onMouseEnter={handleMouseEnter3}
-            onMouseLeave={handleMouseLeave3}>
+            onMouseLeave={handleMouseLeave3}
+          >
             <a href="4">Menus</a>
             {showMenu3 && (
-              <div className="absolute bg-white rounded-md py-2 px-4">
+              <div className="absolute bg-white rounded-md py-2 px-4 mt-6">
                 <a href="2" className="block text-headingColor hover:text-primaryColor mb-2">
                   Menu Style 1
                 </a>
@@ -130,15 +134,17 @@ const NavBar = () => {
                 </a>
               </div>
             )}
-          </li>
-          <li className="p-4 text-white hover:text-primaryColor duration-200 cursor-pointer"
+          </div>
+          <div
+            className="p-4 text-white hover:text-primaryColor duration-200 cursor-pointer"
             onMouseEnter={handleMouseEnter4}
-            onMouseLeave={handleMouseLeave4}>
+            onMouseLeave={handleMouseLeave4}
+          >
             <a href="5">Shop</a>
             {showMenu4 && (
-              <div className="absolute bg-white rounded-md py-2 px-4">
+              <div className="absolute bg-white rounded-md py-2 px-4 mt-6">
                 <a href="2" className="block text-headingColor hover:text-primaryColor mb-2">
-                  Shop 
+                  Shop
                 </a>
                 <a href="2" className="block text-headingColor hover:text-primaryColor mb-2">
                   Shop 3 columns
@@ -163,25 +169,24 @@ const NavBar = () => {
                 </a>
               </div>
             )}
-          </li>
-          <li className="p-4 text-white hover:text-primaryColor duration-200 cursor-pointer">
-            <a href="5">Contact</a>
-          </li>
-        </ul>
-        <div className="  flex-1 flex items-center justify-center ">
-          <button className="">
-          <div class="h-20 w-24 relative cursor-pointer">
-            <div class="absolute inset-0 transform  hover:scale-75 transition duration-300">
-            <img
-              src="http://demo.spyropress.com/themeforest/laboom/wp-content/themes/laboom/assets/images/logo.png"
-              alt=""
-            />
-            </div>
           </div>
-            
+          <div className="p-4 text-white hover:text-primaryColor duration-200 cursor-pointer">
+            <a href="5">Contact</a>
+          </div>
+        </div>
+        <div className="flex-1 flex items-center justify-center">
+          <button className="">
+            <div class="h-20 w-24 relative cursor-pointer">
+              <div class="absolute inset-0 transform  hover:scale-75 transition duration-300">
+                <img
+                  src="http://demo.spyropress.com/themeforest/laboom/wp-content/themes/laboom/assets/images/logo.png"
+                  alt=""
+                />
+              </div>
+            </div>
           </button>
         </div>
-        <ul className="flex items-center">
+        <ul className="hidden md:flex items-center">
           <li className="p-4 text-white hover:text-primaryColor duration-200 cursor-pointer">
             <a href="">
               <i className="fa-regular fa-calendar p-2"></i>

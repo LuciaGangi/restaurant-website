@@ -3,6 +3,17 @@
   src: url('./assets/fonts/graviola-regular.ttf');
 }
 
+@font-face {
+  font-family: Quicksand;
+  src: url('./assets/fonts/Quicksand-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: Jey;
+  src: url('./assets/fonts/Jey.ttf');
+}
+
+
 
 * {
   padding: 0;
@@ -15,7 +26,7 @@ html{
 }
 
 body{
-  font-family: 'Graviola', sans-serif;
+  font-family: 'Graviola', 'Quicksand', 'Jey' sans-serif;
 }
 
 .container{
@@ -33,3 +44,10 @@ section{
   width: 100%;
 }
 
+.font-custom {
+  font-weight: bolder;
+}
+
+.font-custom2 {
+  font-weight: 900;
+}

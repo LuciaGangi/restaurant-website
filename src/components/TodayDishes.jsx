@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
-import "@fontsource/quicksand";
 
 const TodayDishes = () => {
   const slides = [
@@ -24,8 +23,6 @@ const TodayDishes = () => {
     }
   ];
 
-  
-
   const [currentIndex, setCurrentIndex] = useState(0);
   const visibleSlides = slides.slice(currentIndex, currentIndex + 3);
 
@@ -40,18 +37,13 @@ const TodayDishes = () => {
   };
 
   return (
-    <div className='h-screen flex flex-col items-center justify-center relative'>
+    <div className='min-h-screen flex flex-col items-center justify-center relative'>
       <h1 className='text-5xl font-extrabold mb-4 text-primaryColor font-[Quicksand]'>Today Hot Dishes</h1>
-      <h2 className='text-l m-3 text-white font-[Quicksand]'>The role of a good cook ware in the preparation of a sumptuous meal cannot be over
-
-</h2> <br />
-      <div
-        className='absolute inset-0 bg-cover bg-center'
-        
-      ></div>
-      <div className='flex justify-between items-center z-10 gap-32 '>
+      <h2 className='text-l m-3 text-white font-[Quicksand]'>The role of a good cookware in the preparation of a sumptuous meal cannot be over</h2>
+      <br />
+      <div className='relative flex justify-between items-center z-10 gap-32'>
         {visibleSlides.map((slide, index) => (
-          <div key={index} className='flex flex-col items-center transform  hover:scale-75 transition duration-300'>
+          <div key={index} className='flex flex-col items-center transform hover:scale-75 transition duration-300'>
             <img
               src={slide.url}
               alt={slide.title}
@@ -75,4 +67,4 @@ const TodayDishes = () => {
   );
 };
 
-export default TodayDishes
+export default TodayDishes;
